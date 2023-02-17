@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>Home</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <style>
 </style>
 <script src=""></script>
 
+<!-- Dropdown menu credit: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
 
-	<!--- Code above this line will not be displayed on the browser --> 
-
-	<body>
-
-		<p> Hello world! </p>
-		<p> My name is Ben Milas </p>
-		
-	</body>
+<body>
+	<div class="navbar">
+		<a class="active" href="index.html"><img class="logo" src="images/logo.png" alt="Milwaukee Bucks Logo"></a>
+		<a href="news/news.html">News</a>
+		<a href="schedule/schedule.html">Schedule</a>
+		<a href="stats/stats.html">Stats</a>
+		<div class="dropdown">
+			<button class="dropbtn" onclick="window.location.href='history/history.html';">History ▼</button>
+			<div class="dropdown-content">
+				<a href="history/team-history/team-history.html">Team History</a>
+				<a href="history/individual-records/individual-records.html">Individual Records</a>
+			</div>
+		</div>
+		<span class="title">Milwaukee Bucks Fan Hub 🏀🏆</span>
+		<span class="catchphrase">Your home for everything Bucks!</span>
+	</div>
+	<div class="content">
+		<h1>Home</h1>
+	</div>
+</body>
 
 </html>

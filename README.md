@@ -1,1 +1,2 @@
-# This is where notes about my website will go
+# Development Notes
+2/17/23: Added navigation bar and corresponding html pages.
