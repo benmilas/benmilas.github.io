@@ -145,7 +145,12 @@ h1 {
     width: auto;
     height: 10em;
     margin-left: 100px;
-    margin-right: 100px;
+}
+
+#bio {
+    position: absolute;
+    max-width: 40em;
+    padding-left: 20em;
 }
 
 li.clickable {
