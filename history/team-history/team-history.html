@@ -1,90 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Team History</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../../styles/styles.css">
-<style>
-</style>
-<script src="../../scripts/player-profiles.js" type="application/javascript">
-</script>
-
-<body>
-    <div class="navbar">
-        <a href="../../index.html"><img class="logo" src="../../images/logo.png" alt="Milwaukee Bucks Logo"></a>
-        <a href="../../news/news.html">News 📰</a>
-        <a href="../../schedule/schedule.html">Schedule 📅</a>
-        <a href="../../stats/stats.html">Stats 📊</a>
-        <div class="active dropdown">
-            <button class="dropbtn" onclick="window.location.href='../../history/history.html';">History 📜 ▼</button>
-            <div class="dropdown-content">
-                <a class="active" href="../../history/team-history/team-history.html">Team History 📖</a>
-                <a href="../../history/individual-records/individual-records.html">Individual Records 💿</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ben Milas">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Team History</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="../../index.html"><img class="logo" src="../../images/logo.png" alt="Milwaukee Bucks Logo"></a>
+            <a href="../../news/news.html">News 📰</a>
+            <a href="../../schedule/schedule.html">Schedule 📅</a>
+            <a href="../../stats/stats.html">Stats 📊</a>
+            <div class="active dropdown">
+                <button class="dropbtn" onclick="window.location.href='../../history/history.html';">History 📜
+                    ▼</button>
+                <div class="dropdown-content">
+                    <a class="active" href="../../history/team-history/team-history.html">Team History 📖</a>
+                    <a href="../../history/individual-records/individual-records.html">Individual Records 💿</a>
+                </div>
             </div>
-        </div>
-        <span class="title">Milwaukee Bucks Fan Hub 🦌🏀🏆</span>
-        <span class="catchphrase">Your home for everything Bucks!</span>
-    </div>
-    <div class="content">
-        <h1>History of the Milwaukee Bucks</h1>
-        <p>The Milwaukee Bucks are a professional basketball team based in Milwaukee, Wisconsin. The franchise was
-            founded in
-            1968 as an expansion team, and has since become one of the most storied franchises in the NBA. Over the
-            years, the
-            Bucks have fielded many talented players and coaches, and have won numerous awards and championships.</p>
-        <h2>Early Years</h2>
-        <p>When the Bucks were founded, they quickly established themselves as a competitive team. In just their third
-            season,
-            they won their first championship, led by the legendary Lew Alcindor (later known as Kareem Abdul-Jabbar).
-            Alcindor
-            went on to become one of the greatest players in NBA history, and the Bucks continued to field strong teams
-            throughout the 1970s.</p>
+            <span class="title">Milwaukee Bucks Fan Hub 🦌🏀🏆</span>
+            <span class="catchphrase">Your home for everything Bucks!</span>
+        </nav>
+        <section>
+            <h1>History of the Milwaukee Bucks</h1>
+            <p>The Milwaukee Bucks are a professional basketball team based in Milwaukee, Wisconsin. The franchise was
+                founded in
+                1968 as an expansion team, and has since become one of the most storied franchises in the NBA. Over the
+                years, the
+                Bucks have fielded many talented players and coaches, and have won numerous awards and championships.
+            </p>
+            <h2>Early Years</h2>
+            <p>When the Bucks were founded, they quickly established themselves as a competitive team. In just their
+                third
+                season,
+                they won their first championship, led by the legendary Lew Alcindor (later known as Kareem
+                Abdul-Jabbar).
+                Kareem Abdul-Jabbar went on to become one of the greatest players in NBA history, and the Bucks
+                continued to field strong
+                teams throughout the 1970s.</p>
 
-        <h2>Recent History</h2>
-        <p>The Bucks have continued to be a competitive team in recent years, and have made the playoffs multiple times.
-            In
-            2021, they won their first championship in 50 years, led by superstar Giannis Antetokounmpo. The team has a
-            bright
-            future ahead, and is sure to be a force to be reckoned with in the coming years.</p>
+            <h2>Recent History</h2>
+            <p>The Bucks have continued to be a competitive team in recent years, and have made the playoffs multiple
+                times.
+                In
+                2021, they won their first championship in 50 years, led by superstar Giannis Antetokounmpo. The team
+                has a
+                bright
+                future ahead, and is sure to be a force to be reckoned with in the coming years.</p>
 
-        <h2>Notable Players and Coaches</h2>
-        <small>Click on a name to see more information!</small>
-        <div id="list-container">
+            <h2>Notable Players and Coaches</h2>
+            <small>Click on a name to see more information!</small>
+            <div id="list-container">
+                <ul>
+                    <li class="clickable" id="0">Giannis Antetokounmpo</li>
+                    <li class="clickable" id="1">Kareem Abdul-Jabbar</li>
+                    <li class="clickable" id="2">Oscar Robertson</li>
+                    <li class="clickable" id="3">Sidney Moncrief</li>
+                    <li class="clickable" id="4">Ray Allen</li>
+                    <li class="clickable" id="5">George Karl</li>
+                    <li class="clickable" id="6">Mike Budenholzer</li>
+                </ul>
+                <div id="image-container">
+                    <!-- Source and alt tag information is added from player-profiles.js -->
+                    <img id="buck" src="" alt="" />
+                    <div id="bio"></div>
+                </div>
+            </div>
+            <p><small>Player biography content generated by OpenAI's ChatGPT at <a
+                        href="https://openai.com/blog/chatgpt/" target="_blank"
+                        rel="noopener noreferrer">https://openai.com/blog/chatgpt/</a>, CC BY-NC-ND.</small></p>
+
+            <h2>Awards and Accomplishments</h2>
             <ul>
-                <li class="clickable" id="0">Giannis Antetokounmpo</li>
-                <li class="clickable" id="1">Kareem Abdul-Jabbar</li>
-                <li class="clickable" id="2">Oscar Robertson</li>
-                <li class="clickable" id="3">Sidney Moncrief</li>
-                <li class="clickable" id="4">Ray Allen</li>
-                <li class="clickable" id="5">George Karl</li>
-                <li class="clickable" id="6">Mike Budenholzer</li>
+                <li>NBA Championships: 2 (1971, 2021)</li>
+                <li>Conference Titles: 3</li>
+                <li>Division Titles: 17</li>
+                <li>NBA MVP Awards: 5</li>
+                <li>NBA Rookie of the Year Awards: 2</li>
             </ul>
-            <div id="image-container">
-                <img id="buck" src="" alt="Player Information" />
-                <p id="bio"></p>
-            </div>
-        </div>
-
-        <h2>Awards and Accomplishments</h2>
-        <ul>
-            <li>NBA Championships: 2 (1971, 2021)</li>
-            <li>Conference Titles: 3</li>
-            <li>Division Titles: 17</li>
-            <li>NBA MVP Awards: 5</li>
-            <li>NBA Rookie of the Year Awards: 2</li>
-        </ul>
-
-    </div>
-    <footer class="footer">
-        <span class="credits author">Website Author: <a href="https://www.linkedin.com/in/benmilas/" target="_blank"
-                rel="noopener noreferrer">Ben Milas</a></span>
-        <span class="credits">Stats and schedule graphics provided by <a href="https://sportradar.com" target="_blank"
-                rel="noopener noreferrer">Sportradar</a></span>
-        <span class="credits">Biography content generated by <a href="https://openai.com/blog/chatgpt/" target="_blank"
-                rel="noopener noreferrer">OpenAI's
-                ChatGPT</a></span>
-        <span class="credits">Last updated: 2/18/23</span>
-    </footer>
-</body>
-
+        </section>
+        <footer class="footer">
+            <span class="credits">Website Author: <a href="https://www.linkedin.com/in/benmilas/" target="_blank"
+                    rel="noopener noreferrer">Ben Milas</a></span>
+            <span class="credits">Last updated: 3/8/23</span>
+        </footer>
+        <script src="../../scripts/player-profiles.js" type="application/javascript"></script>
+    </body>
 </html>
