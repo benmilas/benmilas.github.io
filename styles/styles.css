@@ -123,11 +123,6 @@ td:last-child {
     color: #000000;
 }
 
-.articleimg {
-    width: "auto";
-    height: "200em";
-}
-
 .active {
     background-color: #0077C0;
     color: #FFFFFF;
